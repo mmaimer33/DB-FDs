@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: db-fds
+Version: 0.3.0
+Summary: Computations and Utility Functions for Database/Relation Functional Dependencies
+Author-email: Mmaimer33 <mmaimer33@gmail.com>
+License-Expression: Apache-2.0
+Keywords: database,dbms,relations,functional dependency,closure,education,design
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Database
+Classifier: Topic :: Education
+Classifier: Topic :: Utilities
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
