@@ -78,6 +78,12 @@ class FunctionalDependency:
     """
     A class to represent a functional dependency (FD) between two sets of attributes.
     Two FDs are equal if their LHS (`fro`) are equal and their RHS (`to`) are equal.
+
+    Attributes:
+        fro (set[Symbol]): Set of attributes that determine another set of attributes.
+        to (set[Symbol]): Set of attributes that is determined by `fro`.
+        lhs (set[Symbol]): Alias for `fro`.
+        rhs (set[Symbol]): Alias for `to`.
     """
 
     def __init__(self, fro: Symbol | set[Symbol], to: Symbol | set[Symbol]) -> None:
