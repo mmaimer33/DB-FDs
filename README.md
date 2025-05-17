@@ -4,15 +4,15 @@ DB-FDs is a simple package containing utility functions to work with [**Function
 
 ## Installation
 
-You can install the package from [PyPI](https://pypi.org/project/db-fds) using [pip](https://pypi.org/project/pip/):
+You can install the package from [PyPI](https://pypi.org/project/db-fds/) using [pip](https://pypi.org/project/pip/):
 
-    python3 -m pip install db-fds
+    python -m pip install db-fds
 
 or simply,
 
-    pip3 install db-fds
+    pip install db-fds
 
-Note: The `3` in either command may be omitted if your system uses Python 3 by default.
+Note: If your system does not use Python 3 by default, you may need to replace the command with `python3` or `pip3`, respectively.
 
 The package is supported on Python 3.0 and above.
 
