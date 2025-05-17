@@ -1,0 +1,7 @@
+fdfuncs module
+==============
+
+.. automodule:: fdfuncs
+   :members:
+   :undoc-members:
+   :show-inheritance:

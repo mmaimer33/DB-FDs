@@ -374,7 +374,7 @@ def compute_closure(attrs: set[Symbol], fds: set[FunctionalDependency]) -> set[S
     The closure is defined as the set of attributes that can be determined from the input attributes using the FDs.
 
     Args:
-        attrs (set[Symbol]): The set of `Symbol`s to compute closure for.
+        attrs (set[Symbol]): The set of :class:`~fdfuncs.Symbol`\s to compute closure for.
         fds (set[FunctionalDependency]): FDs to use for closure.
     Returns:
         set[Symbol] The closure.
@@ -551,13 +551,11 @@ def find_keys(superkeys: set[frozenset[Symbol]] = None, attrs: set[Symbol] = Non
     will be ignored.
 
     Args:
-        superkeys (set[frozenset[Symbol]], optional): A set of superkeys for the relation. If not provided, 
-            superkeys will first be computed from `attrs` and `fds`.
+        superkeys (set[frozenset[Symbol]], optional): A set of superkeys for the relation. If not provided, superkeys will first be computed from `attrs` and `fds`.
         attrs (set[Symbol], optional): Set of attributes in the relation.
         fds (set[FunctionalDependency]): Set of FDs of the relation.
     Returns:
-        set[frozenset[Symbol]]: Set containing a list of all attribute combinations that act as candidate keys for the relation.\n
-            Note that it must be a set of frozensets due to hashing limitations.
+        set[frozenset[Symbol]]: Set containing a list of all attribute combinations that act as candidate keys for the relation. Note that it must be a set of frozensets due to hashing limitations.
     Raises:
         TypeError: Via `find_superkeys`.
     """
@@ -588,6 +586,7 @@ def non_trivial_n_decomposed(attrs: set[Symbol], fds: set[FunctionalDependency])
     Returns all 'non-trivial and decomposed' Functional Dependencies:\n
     * Non-Trivial: If a Symbol exists on the LHS of an FD, it will not appear on the RHS.
     * Decomposed: All RHS will only contain a single Symbol.
+
     Any FDs not in the initial arguments will be derived.
     
     Args:
