@@ -1,5 +1,7 @@
 # DB-FDs
 
+[![CodeQL](https://github.com/mmaimer33/DB-FDs/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/mmaimer33/DB-FDs/actions/workflows/github-code-scanning/codeql)
+
 DB-FDs is a simple package containing utility functions to work with [**Functional Dependencies**](https://en.wikipedia.org/wiki/Functional_dependency) for Database design.
 
 ## Installation
