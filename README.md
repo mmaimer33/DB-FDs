@@ -1,5 +1,7 @@
 # DB-FDs
 
+[![CodeQL](https://github.com/mmaimer33/DB-FDs/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/mmaimer33/DB-FDs/actions/workflows/github-code-scanning/codeql)
+
 DB-FDs is a simple package containing utility functions to work with [**Functional Dependencies**](https://en.wikipedia.org/wiki/Functional_dependency) for Database design.
 
 ## Installation
@@ -42,26 +44,16 @@ Symbol("")
 
 The package comes with 2 classes to create objects to work with: `Symbol` and `FunctionalDependency`. Use `Symbol` to represent an attribute in a relation, and create `FunctionalDependency` objects between 2 or more `Symbol`s. See the class and constructor docstrings for details.
 
-### Functions available
+## Documentation
 
-Here is a list of currently available functions. Use the docstrings per method to see how to use it.
-
-- all_subset_closures
-- canonical_cover
-- combinations
-- compute_closure
-- find_keys
-- find_superkeys
-- get_augmented
-- get_reflexive
-- get_transitive
-- make_decomposed
-- make_union
-- minimal_cover
-- non_trivial_n_decomposed
+Read the documentation in [one place](https://db-fds.readthedocs.io/en/latest/) to see the available functionality.
 
 ## Planned future additions
 
 - BCNF and 3NF checks
 - Normalization functions
 - Checking for lossless decompositions
+
+## How to Contribute
+
+Fork the repository from [https://github.com/mmaimer33/DB-FDs](https://github.com/mmaimer33/DB-FDs) and submit a pull request. Also read the [Code of Conduct](CODE_OF_CONDUCT.md).
